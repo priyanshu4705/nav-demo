@@ -3,7 +3,9 @@ import React from 'react'
 function Cart() {
     return (
         <div>
-            this is cart page
+            <h1>
+                this is cart page
+            </h1>
         </div>
     )
 }

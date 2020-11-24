@@ -1,10 +1,10 @@
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Profile from './components/Profile';
-import SignUp from './components/SignUp';
-import Cart from './components/Cart';
+import Home from './pages/Home';
+import Profile from './pages/Profile';
+import SignUp from './pages/SignUp';
+import Cart from './pages/Cart';
 
 function App() {
   return (
