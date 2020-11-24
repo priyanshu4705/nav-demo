@@ -1,28 +1,32 @@
 import React from 'react'
-// import { Button, Form, FormControl, Nav } from 'react-bootstrap'
+import { Button, Form, FormControl, Nav, Navbar } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
-function Navbar() {
+function NavBar() {
     return (
         <div>
-            <nav>
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/profile">Profile</Link>
-                    </li>
-                    <li>
-                        <Link to="/cart">Cart</Link>
-                    </li>
-                    <li>
-                        <Link to="/signup">Sign Up</Link>
-                    </li>
-                </ul>
-            </nav>
+            <Navbar bg="dark" variant="dark">
+                <Link to="/">
+                    <Navbar.Brand><h3>GNKart</h3></Navbar.Brand>
+                </Link>
+                <Form inline className="ml-auto">
+                    <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                    <Button variant="outline-info">Search</Button>
+                </Form>
+                <Nav className="ml-auto">
+                    <Link to="/profile">
+                        <Navbar.Brand>Profile</Navbar.Brand>
+                    </Link>
+                    <Link to="/cart">
+                        <Navbar.Brand>Cart</Navbar.Brand>
+                    </Link>
+                    <Link to="/signup">
+                        <Navbar.Brand>Sign up</Navbar.Brand>
+                    </Link>
+                </Nav>
+            </Navbar>
         </div>
     )
 }
 
-export default Navbar
+export default NavBar

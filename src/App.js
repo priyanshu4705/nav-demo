@@ -1,6 +1,6 @@
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import Navbar from './components/Navbar';
+import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import SignUp from './pages/SignUp';
@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <NavBar />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/cart" component={Cart} />
